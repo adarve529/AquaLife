@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+
+*{
+	margin:opx;
+	padding: opx;
+	
+}
+
+.contenido_font{
+	font-family: 'Crete Round', serif;
+    font-family: 'Paytone One', sans-serif;
+	display: flex;
+	width: 300px;
+	height:40px;
+	color: #fff;
+	font-size: 40px;
+	line-height: 40px;
+	
+    text-align: center;   
+	
+	overflow: hidden;
+}
+
+ul {
+	font-family: 'Crete Round', serif;
+    font-family: 'Paytone One', sans-serif;
+	text-align: center;
+	list-style: none;
+	padding-left: 10px;
+	animation: cambiar 7s infinite;
+}
+
+ul,p {
+	font-family: 'Crete Round', serif;
+	margin:0;
+	
+}
+
+@keyframes cambiar {
+	
+	0%{margin-top: 0;}
+	20%{margin-top: 0;}
+	
+	25% {margin-top: -40%;}
+	50% {margin-top: -40%;}
+	
+	55% {margin-top: -80px;}
+	70% {margin-top: -80px;}
+
+    85% {margin-top: -40px;}
+	90% {margin-top: -40px;}
+	
+	100% {margin-top: 0;}
+}
+
+
+
+.imagen_fondo{
+	background-image: url(../imagenes/Oceano.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 20em;
+	
+}
+
+.titulo_banner{
+	
+	color: azure;
+	text-align: center;
+	padding-top:2em;
+    font-family: 'Crete Round', serif;
+
+}
+
+.texto_banner{
+	color: azure;
+	text-align: center;
+	padding-top:3em;
+	font-size: 150%;
+	font-family: 'Crete Round', serif;
+}
