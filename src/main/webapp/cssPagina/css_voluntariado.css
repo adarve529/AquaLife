@@ -6,15 +6,14 @@
 	
 }
 
-.contenido_font{
-	font-family: 'Crete Round', serif;
-    font-family: 'Paytone One', sans-serif;
+.contenido{
 	display: flex;
 	width: 300px;
 	height:40px;
 	color: #fff;
 	font-size: 40px;
 	line-height: 40px;
+	
 	
     position: absolute;
     top:0;
@@ -23,20 +22,21 @@
     left: 5%;
     margin: auto;	
 	overflow: hidden;
+	
 }
 
 ul {
-	font-family: 'Crete Round', serif;
-    font-family: 'Paytone One', sans-serif;
+	font-family: 'Archivo Black', sans-serif;
 	text-align: center;
 	list-style: none;
-	padding-left: 10px;
+	padding-left: 15px;
 	animation: cambiar 7s infinite;
 }
 
-ul,p {
-	font-family: 'Crete Round', serif;
+p {
+	font-family:'Archivo Black', sans-serif;
 	margin:0;
+	
 	
 }
 
@@ -58,22 +58,13 @@ ul,p {
 }
 
 
-
-.titulo_banner{
-	
-	color: azure;
-	text-align: center;
-	padding-top:2em;
-    font-family: 'Crete Round', serif;
-
-}
-
 .texto_banner{
 	color: azure;
 	text-align: center;
-	padding-top:2em;
-	font-size: 180%;
-	font-family: 'Crete Round', serif;
+	padding-top:5em;
+	font-size: 380%;
+	font-family: 'Archivo Black', sans-serif;
+	left: 17%;
 }
 
 
@@ -169,17 +160,59 @@ background: #05CAE5;
 .bg_color{
 	width: 100%;
 	height:70%;
-	*background: blue;
+	background: #2196f3;
 	position: absolute;
 	top: 0;
 	
 }
+body{
+   overflow-x: hidden;
+}
 .wave{
-	background-image: url(../imagenes/wd1.svg);
+	width:300%;
+	height:95%; 
 	position:absolute;
 	top: 150px;
 	left: 0;
 	background-position: bottom;
+	background-image: url(../imagenes/wd1.svg);
+	display:flex;
 	
 }
 
+.w1{
+	animation: w1 7s linear infinite;
+	overflow: hidden;
+}
+.w2{
+	animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+	opacity:0.5;	
+	overflow: hidden;	
+}
+
+@keyframes w1 {
+	0%{
+	    margin-left: 0;
+	}
+	100%{
+	     margin-left: -1600px;
+	}
+}
+@keyframes w2 {
+	0%{
+	    margin-left: 0;
+	}
+	100%{
+	     margin-left: -1600px;
+	}
+}
+@keyframes desplazamiento {
+	0%, 100%{
+	    transform: translateY(-25px);
+	}
+	100%{
+	    transform: translateY(10px);
+	}
+}
+
+/*WAVE(OLA) FIN*/
