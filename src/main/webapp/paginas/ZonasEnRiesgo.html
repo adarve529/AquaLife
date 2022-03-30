@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Zonas en riesgo</title>
+<meta charset="UTF-8">
+<title>Zonas en riesgo-AquaLife</title>
 <link rel="shortcut icon" href="../iconos/AquaLife_logo.png" type="image/x-icon">
 <link rel="stylesheet" href="../cssPagina/css_zonas_en_riesgo.css">
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	function loadPage(page) {
+		document.getElementById("container").innerHTML = '<object type="text/html" height="650px" width="100%"  data="'
+				+ page + '"></object>';
+	}
+	
+	
+</script>
+
 </head>
 <body>
+<div id="container">
 <header id="inicio">
-
+<img src="../iconos/AquaLife_logo.png" class="logo" onclick="location.reload()">
 <img src="../iconos/menu.svg" alt="" class="hamburguer">
 <nav class="menu-navegacion">
 
 <ul class="menu">
 						
-					<li><a href="#">Bolet�n informativo</a>
+					<li><a href="#">Boletín informativo</a>
 						 <ul class="submenu">
-						     <li><a href="#">�Qui�nes somos?</a>
-						     <li><a href="#">�Qu� hacemos?</a>
+						     <li><a href="QuienesSomos.html">¿Quiénes somos?</a>
+						     <li><a href="QueHacemos.html">¿Qué hacemos?</a>
 						 </ul>
 					<li>
-						<li><a href="#" onclick="loadPage('Noticias.html')">Noticias</a></li>
-						<li><a href="#">Lugares tur�sticos</a>
+						<li><a href="Noticias.html">Noticias</a></li>
+						<li><a href="#">Lugares turísticos</a>
 						   <ul class="submenu">
 						         <li><a href="#">Lugar1</a></li>
 						         <li><a href="#">Lugar2</a></li>
@@ -30,32 +44,113 @@
 					   </li>
 						<li><a href="#">Apoyo a fundaciones</a>
 						    <ul class="submenu">
-						         <li><a href="#">Fundaci�n1</a></li>
-						         <li><a href="#">Fundaci�n2</a></li>
-						         <li><a href="#">Fundaci�n3</a></li>
+						         <li><a href="#">Fundación1</a></li>
+						         <li><a href="#">Fundación2</a></li>
+						         <li><a href="#">Fundación3</a></li>
 						   </ul>
 						</li>
 						<li><a href="#">Zonas en riesgo</a></li>
-						<li><a href="#">Voluntariado</a></li>
+						<li><a href="Voluntariado.html">Voluntariado</a></li>
 						
 					
 					</ul>
 					
 </nav>
 <section class="textos-header">
-<h1>Zonas en riesgo</h1>
-<h2>Vertido de pl�sticos, contaminaci�n y pesca ilegal.</h2>
+<h1>ZONAS EN RIESGO</h1>
+<h2>Vertido de plásticos, contaminación y pesca ilegal.</h2>
 </section>
 <!-- <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div> -->
 
 </header>
 <main>
 <div class="contenedor">
+<section>
+<h1 class="titulo">"LA VIDA MARINA FORMA PARTE DE MÁS DEL 75% DE LA VIDA EN 
+EL PLANETA TIERRA. NO PODEMOS PERMITIR LO QUE ESTÁ PASANDO EN LOS OCÉANOS."</h1>
+<br><hr><br><br>
+<div class="contenedor-problema">
+<img src="../imagenes/tortuga.jpg" class="imagen-tortuga">
 
+<div class="texto-contenedor-problema">
+<p>Los beneficios que los océanos nos brindan en nuestro día a día son innumerables: 
+influyen en los fenómenos meteorológicos más importantes, regulan el clima, producen 
+el oxígeno que respiramos y son el hogar de ballenas, tiburones, tortugas y otras especies.</p><br>
+
+<p>Pero, por sorprendente que parezca, dos tercios del agua de mares y océanos —la mitad del 
+planeta en términos absolutos— son aguas internacionales en las que no existe regulación alguna
+ sobre la protección de su biodiversidad. De la gestión sostenible de los océanos depende el 
+ futuro de la humanidad.</p><br>
+
+<p>La pesca insostenible e ilegal, la minería submarina, el tráfico marítimo, la contaminación 
+y los efectos del cambio climático llevan décadas amenazando profundamente a nuestro medio marino.
+ La riqueza del fondo marino, sus ecosistemas y diversidad están en riesgo. Muchos organismos, 
+ como los corales, el plancton y los crustáceos, son muy sensibles a los efectos de la acidificación
+  del océano, que unido al calentamiento global pueden llevar a impactos irreversibles para todas
+   las especies, entre ellas la humana.</p><br>
+
+<p>Un 90% de las poblaciones de peces que se han evaluado en el Mediterráneo están sobreexplotadas.
+ Un 58% de las poblaciones mundiales están plenamente explotadas. Además, en el territorio español
+  ha primado la urbanización del litoral en lugar de proteger los ecosistemas costeros. España 
+  tiene protegido sólo un 8% de sus aguas y sin implementación real de las políticas de gestión 
+  pesquera o costera, la degradación de nuestros mares es imparable</p><br>
+  </div>
+</div>
+</section>
+<section>
+<h2 class="subtitulo">ZONAS MÁS AFECTADAS</h2>
+
+<div class="contenedor-problema">
+<div class="texto-contenedor-problema">
+<p>Los beneficios que los océanos nos brindan en nuestro día a día son innumerables: 
+influyen en los fenómenos meteorológicos más importantes, regulan el clima, producen 
+el oxígeno que respiramos y son el hogar de ballenas, tiburones, tortugas y otras especies.</p><br>
+  </div>
+  <img src="../imagenes/mardeplastico.png" class="imagen-mardeplastico">
+</div>
+</section>
+<section class="recogida-firmas"></section>
+<h2>AYÚDANOS CON TU FIRMA A APOYAR LA CAUSA</h2>
+<input type="button" class="boton-firmas" value="Recogida de firmas">
 </div>
 </main>
+<footer class="pie-pagina">
+			
+		<div class="grupo-1">
+			
+			<div class="box">
+			<figure>
+			<a href="#"><img src="../iconos/AquaLife_logo.png"></a>
+			</figure>
+			</div>
+			
+			<div class="box">
+			<h2>SOBRE NOSOTROS</h2>
+			<p>AquaLife es una página dirigida para aquellas 
+			personas a las que les interese la vida marina. </p>
+			<p>Ofrecemos información y apoyo a aquellas fundaciones
+			 comprometidas con la causa porque los océanos son de todos.
+			  ¡Aýudanos a construir un mundo mejor!</p>
+			</div>
+			
+			<div class="box">
+			<h2>SÍGUENOS</h2>
+			<div class="red-social">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			</div>
+		    </div>
+		</div>
+		<div class="grupo-2">
+		<small>&copy; 2022 <b>AquaLife</b> - Todos los Derechos Reservados</small>
+		
+		</div>
+		
+			</footer>
 
-
+</div>
 <script src="../jsPagina/js_zonas_en_riesgo.js"></script>
 </body>
 </html>

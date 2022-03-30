@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Registrarse.AquaLife</title>
+<title>Registrarse</title>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <script src="../js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="../cssPagina/css_registrarse.css">
@@ -13,7 +13,13 @@
 if($('form').smockValidateForm()){
 	 
 	}
+	
+function loadPage(page) {
+	document.getElementById("container").innerHTML = '<object type="text/html" height="650px" width="100%"  data="'
+			+ page + '"></object>';
+}
 </script>
+<div id="container">
 	<form>
 		<section class="registro">
 			<h4>
@@ -51,8 +57,9 @@ if($('form').smockValidateForm()){
 			</p>
 			<input class="botones" type="submit" value="Registrarse">
 			<p>
-				<a href="#">¿Ya tienes cuenta?</a>
+				<a href="IniciarSesion.html">¿Ya tienes cuenta?</a>
 		</section>
 	</form>
+	</div>
 </body>
 </html>

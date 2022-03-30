@@ -2,25 +2,31 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>¿Qué hacemos?AquaLife</title>
+<title>¿Qué hacemos?-AquaLife</title>
 <link rel="shortcut icon" href="../iconos/AquaLife_logo.png" type="image/x-icon">
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <script src="../js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="../cssPagina/css_que_hacemos.css">
 <link rel="stylesheet" href="../cssPagina/css_header_footer.css">
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+<script>
+function loadPage(page) {
+	document.getElementById("container").innerHTML = '<object type="text/html" height="650px" width="100%" data="'+page+'"></object>';
+}
+</script>
 </head>
 <body>
-<div id="contenido">
+<div id="container">
 <!-- <div class="row"> -->
 			<header>
 			<div class="seccion-1">
 
 				<h1>
-					<img src="../iconos/AquaLife_logo.png" align="left" width="60">
-					|| AquaLife <a href="#" onclick="loadPage('Registrarse.html');"><img
+					<img src="../iconos/AquaLife_logo.png" align="left" width="60" onclick="location.reload()" class="logo">
+					|| AquaLife <a href="Registrarse.html"><img
 						src="../iconos/inicio_sesion.png" width="40" align="right"></a>
-						<a href="#" onclick="loadPage('IniciarSesion.html');"><img
+						<a href="IniciarSesion.html"><img
 						src="../iconos/login.png" width="40" align="right" ></a>
 				</h1>
 				</div>
@@ -33,11 +39,11 @@
 						
 					<li><a href="#">Boletín informativo</a>
 						 <ul class="submenu">
-						     <li><a href="#">¿Quiénes somos?</a>
+						     <li><a href="QuienesSomos.html">¿Quiénes somos?</a>
 						     <li><a href="#">¿Qué hacemos?</a>
 						 </ul>
 					<li>
-						<li><a href="#" onclick="loadPage('Noticias.html')">Noticias</a></li>
+						<li><a href="Noticias.html">Noticias</a></li>
 						<li><a href="#">Lugares turísticos</a>
 						   <ul class="submenu">
 						         <li><a href="#">Lugar1</a></li>
@@ -52,8 +58,8 @@
 						         <li><a href="#">Fundacion3</a></li>
 						   </ul>
 						</li>
-						<li><a href="#">Zonas en riesgo</a></li>
-						<li><a href="#">Voluntariado</a></li>
+						<li><a href="ZonasEnRiesgo.html">Zonas en riesgo</a></li>
+						<li><a href="Voluntariado.html">Voluntariado</a></li>
 						
 					
 					</ul>
