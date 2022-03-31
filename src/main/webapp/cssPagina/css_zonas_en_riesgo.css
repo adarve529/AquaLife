@@ -158,8 +158,8 @@ background: #05CAE5;
 	visibility: visible;
 	opacity: 1;
 	
-} */
-
+}
+ */
 
 
 
@@ -211,7 +211,39 @@ background: #05CAE5;
 }
 
 
+/*recogida de firmas*/
+.titulo-rdf {
+	text-align: left;
+	font-size: 35px;
+	padding: 10px;
+	text-decoration: underline;
+}
 
+
+.btn-recoge-firmas {
+	display: block;
+	background: #01A9DB;
+	color: #fff;
+	text-decoration: none;
+	border-bottom-color: black;
+	border-radius: 8px;
+	width: 25%;
+	height: 50px;
+	font-size: 22px;
+	box-shadow: 3px 7px 20px 8px rgba(0, 0, 0, .1);
+	transition: .2s;
+	margin: inherit;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+.btn-recoge-firmas:hover {
+		background: #149CC9;
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+	transform: translateY(-2px);
+}
 
 
 /* estilos del foooter */
