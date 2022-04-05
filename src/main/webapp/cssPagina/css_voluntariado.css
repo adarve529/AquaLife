@@ -6,24 +6,7 @@
 	
 }
 
-.contenido{
-	display: flex;
-	width: 300px;
-	height:40px;
-	color: #fff;
-	font-size: 40px;
-	line-height: 40px;
-	
-	
-    position: absolute;
-    top:0;
-    right:0;
-    bottom: 0;
-    left: 5%;
-    margin: auto;	
-	overflow: hidden;
-	
-}
+
 
 ul {
 	font-family: 'Archivo Black', sans-serif;
@@ -31,13 +14,12 @@ ul {
 	list-style: none;
 	padding-left: 15px;
 	animation: cambiar 7s infinite;
+
 }
 
 p {
 	font-family:'Archivo Black', sans-serif;
 	margin:0;
-	
-	
 }
 
 @keyframes cambiar {
@@ -62,9 +44,9 @@ p {
 	color: azure;
 	text-align: center;
 	padding-top:5em;
-	font-size: 380%;
+	font-size: 400%;
 	font-family: 'Archivo Black', sans-serif;
-	left: 17%;
+	left: 14.5%;
 }
 
 
@@ -94,7 +76,7 @@ p {
 	width: 20vw;
 	height: 100%;
 	background: rgb(205,5,5);
-background: #05CAE5;
+    background: #05CAE5;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -157,62 +139,177 @@ background: #05CAE5;
 
 /*WAVE(OLA) INICIO*/
 
-.bg_color{
+/*.contain_wave{
+	position: relative;
 	width: 100%;
-	height:70%;
-	background: #2196f3;
-	position: absolute;
-	top: 0;
+	height:100vh ;
+	background-color: #2196f3;
+	overflow: hidden;
 	
-}
-body{
+}*/
+body-card{
    overflow-x: hidden;
-}
-.wave{
-	width:300%;
-	height:95%; 
-	position:absolute;
-	top: 150px;
-	left: 0;
-	background-position: bottom;
-	background-image: url(../imagenes/wd1.svg);
-	display:flex;
-	
+   
+    width: 100vw;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+   
 }
 
-.w1{
+/*
+.wave{
+	position:absolute;
+	bottom:0;
+	left: 0;
+	width:100%;
+	height:100px; 
+	background-image: url(../imagenes/waveog.png);
+	background-size:1000px 100px;
+	animation: wave 8s linear infinite;
+
+}
+
+/**.w1{
 	animation: w1 7s linear infinite;
-	overflow: hidden;
+	
 }
 .w2{
 	animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
 	opacity:0.5;	
-	overflow: hidden;	
-}
+	
+}*/
 
-@keyframes w1 {
+/*@keyframes wave {
 	0%{
-	    margin-left: 0;
+	    background-position-x: 0;
 	}
 	100%{
-	     margin-left: -1600px;
+	     background-position-x: 1000px;
 	}
 }
-@keyframes w2 {
-	0%{
-	    margin-left: 0;
-	}
-	100%{
-	     margin-left: -1600px;
-	}
-}
-@keyframes desplazamiento {
-	0%, 100%{
-	    transform: translateY(-25px);
-	}
-	100%{
-	    transform: translateY(10px);
-	}
-}
+/*
 
 /*WAVE(OLA) FIN*/
+
+
+/*video wave*/
+
+.header-video {
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100;
+	overflow: hidden;
+	
+}
+
+
+/*cards*/
+
+.post:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+
+
+.content {
+	
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;	
+max-width: 1000px;
+margin: auto;
+padding: 40px 0 40px 0;
+
+}
+
+.boton {
+	
+	background-color: #05F723; 
+	display: block;
+	padding: 10px;
+	color: #fff;
+	width: 50%;
+
+    margin: auto;
+    margin-top: 30px;
+	border-radius: 20px;
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+	transition: .2s;
+	
+}
+
+.boton1 {
+	
+	background-color: #0016F1; 
+	display: block;
+	padding: 10px;
+	color: #fff;
+	width: 50%;
+
+    margin: auto;
+    margin-top: 30px;
+	border-radius: 20px;
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+	transition: .2s;
+	
+}
+
+.boton2 {
+	
+	background-color: #FF118F; 
+	display: block;
+	padding: 10px;
+	color: #fff;
+	width: 50%;
+
+    margin: auto;
+    margin-top: 30px;
+	border-radius: 20px;
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+	transition: .2s;
+	
+}
+
+.seccion{
+	
+	padding: 0px 60px 0px 60px;
+	
+}
+
+
+.logo-wsp {
+	
+	background: url("../imagenes/wsp.png");
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.logo-discord {
+	
+	background: url("../imagenes/discord.png");
+	width:  100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.logo-instagram {
+	background: url("../imagenes/instagram.png");
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+
