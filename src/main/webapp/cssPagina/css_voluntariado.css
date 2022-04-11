@@ -215,91 +215,96 @@ body-card{
 	box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
 }
 
-
 .content {
-	
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 20px;	
-max-width: 1000px;
-margin: auto;
-padding: 40px 0 40px 0;
-
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	max-width: 1000px;
+	margin: auto;
+	padding: 40px 0 40px 0;
 }
 
 .boton {
-	
-	background-color: #05F723; 
+	text-decoration: none;
+	text-align: center;
+	background-color: #05F723;
 	display: block;
 	padding: 10px;
 	color: #fff;
 	width: 50%;
-
-    margin: auto;
-    margin-top: 30px;
+	margin: auto;
+	margin-top: 30px;
 	border-radius: 20px;
 	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
 	transition: .2s;
-	
+}
+
+.boton:hover {
+	color: #fff;
+	transform: translateY(-7px);
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
 }
 
 .boton1 {
-	
-	background-color: #0016F1; 
+	text-decoration: none;
+	text-align: center;
+	background-color: #0016F1;
 	display: block;
 	padding: 10px;
 	color: #fff;
 	width: 50%;
-
-    margin: auto;
-    margin-top: 30px;
+	margin: auto;
+	margin-top: 30px;
 	border-radius: 20px;
 	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
 	transition: .2s;
-	
+}
+
+.boton1:hover {
+	color: #fff;
+	transform: translateY(-7px);
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
 }
 
 .boton2 {
-	
-	background-color: #FF118F; 
+	text-decoration: none;
+	text-align: center;
+	background-color: #FF118F;
 	display: block;
 	padding: 10px;
 	color: #fff;
 	width: 50%;
-
-    margin: auto;
-    margin-top: 30px;
+	margin: auto;
+	margin-top: 30px;
 	border-radius: 20px;
 	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
 	transition: .2s;
-	
 }
 
-.seccion{
-	
+.boton2:hover {
+	color: #fff;
+	transform: translateY(-7px);
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+}
+
+.seccion {
 	padding: 0px 60px 0px 60px;
-	
 }
-
 
 .logo-wsp {
-	
 	background: url("../imagenes/wsp.png");
 	width: 100%;
 	height: 300px;
 	background-size: cover;
 	background-position: center;
-	
 }
 
 .logo-discord {
-	
 	background: url("../imagenes/discord.png");
-	width:  100%;
+	width: 100%;
 	height: 300px;
 	background-size: cover;
 	background-position: center;
-	
 }
 
 .logo-instagram {
@@ -308,8 +313,14 @@ padding: 40px 0 40px 0;
 	height: 300px;
 	background-size: cover;
 	background-position: center;
-
 }
+
+.post-link:hover {
+	background: #3378c7;
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+	transform: translateY(-2px);
+}
+
 
 
 
